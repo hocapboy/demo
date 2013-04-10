@@ -42,11 +42,7 @@
  */
 
 (function() {
-	var $ = jQuery,
-		animate = ($.fn.startAnimation ? 'startAnimation' : 'animate'),
-		pause_missing = 'pause plugin missing.';
-
-	// utility to format a string with {0}, {1}... placeholders
+		// utility to format a string with {0}, {1}... placeholders
 	function format(str) {
 		for (var i = 1; i < arguments.length; i++)
 			str = str.replace(new RegExp('\\{' + (i-1) + '}', 'g'), arguments[i]);
